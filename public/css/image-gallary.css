@@ -1,0 +1,38 @@
+/* Image Gallary CSS  */
+.img-gallary{
+    position: relative;
+    display: flex;
+    width: 100%;
+}
+.gallary-left{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin: 3% 2%;
+}
+.owl-carousel .owl-item img{
+    border-radius: 15px;
+}
+.owl-stage{
+    display: flex;
+}
+.gallary-right{
+    position: relative;
+    display: flex;
+    width: 45%;
+    flex-direction: column;
+    align-items: center;
+    margin: 3% 0;
+    margin-right: 2%;
+}
+.about-dept{
+    position: relative;
+    font-size: 2rem;
+    text-decoration: underline;
+}
+.dept-para{
+    position: relative;
+    text-align: justify;
+}
