@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.d-p {
+  min-height: 100vh;
+  background-image: radial-gradient(#ff8a00, #e52e71);
+}
+
+.team-parent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 1rem 0;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.dd-p {
+  text-align: center;
+}
+
+.top-team {
+  font-size: 5rem;
+  font-weight: 900;
+  font-family: "Baloo 2", cursive;
+  color: #0000ff;
+  text-align: center;
+}
+
+.team-h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  font-family: "Baloo 2", cursive;
+  color: #1a1a1a;
+  display: inline-block;
+  /* border-bottom: 4px dotted burlywood; */
+  border-bottom: 4px dotted white;
+}
+.team-indi {
+  width: 18%;
+  margin: 1rem auto 0 auto;
+  padding: 1rem 0 0 0;
+  text-align: center;
+  box-shadow: 0 0 0.9375rem;
+  border-radius: 0.625rem;
+  /* background-color: whitesmoke; */
+  background-color: #50c7dc8f;
+  /* background-color: #242861; */
+  transition: all 0.1s ease-in-out;
+}
+
+.team-indi img {
+  width: 70%;
+  border-radius: 0.625rem;
+  object-fit: contain;
+  display: block;
+  pointer-events: none;
+  margin: 0 auto;
+  opacity: 0.9;
+}
+
+.team-indi:hover {
+  transform: translateY(-3px);
+}
+
+.team-indi:hover .indi-img {
+  opacity: 1;
+}
+
+.team-indi h3 {
+  display: inline-block;
+  border-bottom: 3px dotted whitesmoke;
+  /* font-family: 'Montserrat', sans-serif; */
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #1a1a1a;
+  font-size: 1rem;
+  margin: 1.3vh 0;
+  padding: 0 0.2vh;
+}
+
+.team-indi h4 {
+  display: inline-block;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #1a1a1a;
+  font-size: 1rem;
+  margin: 0.5vh 0 1.3vh 0;
+  padding: 0 0.2vh;
+}
+
+.d-bt {
+  text-align: center;
+}
+
+.p-by {
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  background-color: rgba(187, 239, 253, 0.3);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  color: #1a1a1a;
+  transition: all 0.1s ease-in-out;
+  display: inline-block;
+  margin: 3vh auto;
+}
+
+.p-by:hover {
+  border-bottom: 1px solid #1a1a1a;
+  background-color: rgb(187, 239, 253);
+}
+
+.d-li {
+  padding-bottom: 2vh;
+}
+
+@media only screen and (max-width: 660px) {
+  .team-parent {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .top-team {
+    font-size: 2.5rem;
+    padding: 0 0.2rem;
+  }
+  .team-h1 {
+    font-size: 1.5rem;
+  }
+
+  .team-indi {
+    width: 45%;
+    margin: 1rem auto;
+  }
+}
