@@ -134,6 +134,7 @@ content: '';
 
     .nav-link{
         color: #101010 !important;
+        font-weight: 600 !important;
     }
 
     .nav-menu.active {
