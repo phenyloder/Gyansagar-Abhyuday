@@ -14,7 +14,10 @@
 }
 .owl-carousel .owl-item img{
     border-radius: 15px;
+    pointer-events: none;
+    object-fit: contain;
 }
+
 .owl-stage{
     display: flex;
 }
@@ -27,12 +30,33 @@
     margin: 3% 0;
     margin-right: 2%;
 }
+
 .about-dept{
     position: relative;
     font-size: 2rem;
     text-decoration: underline;
+    margin: 2vh 0;
 }
+
 .dept-para{
     position: relative;
-    text-align: justify;
+}
+
+
+@media only screen and (max-width:991px){
+    .img-gallary{
+        flex-direction: column;
+    }
+
+  
+    .gallary-left, .gallary-right{
+        width: 95%;
+        margin: 0 auto;
+    }
+    .gallary-left{
+        margin-top: 5vh;
+    }
+    .about-dept{
+        font-size: 1.5rem;
+    }
 }

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div class="nav-bar">
     <div class="left-section">
         <div class="logo">
@@ -28,3 +29,56 @@
         </div>
     </div>
 </div>
+=======
+<header class="header">
+  <nav class="navbar">
+    <a href="/" class="nav-logo"
+      ><span><img class="brand-img" src="./images/logo.png" alt="" /></span
+      ><span class="brand-h1 title-brand">Abhyuday.</span>
+    </a>
+
+    <ul class="nav-menu">
+      <li class="nav-item">
+        <a href="/" class="nav-link">Home</a>
+      </li>
+      <li class="nav-item">
+        <a href="/gallery" class="nav-link">Gallery</a>
+      </li>
+      <li class="nav-item">
+        <a href="/#event" class="nav-link">Events</a>
+      </li>
+      
+      <li class="nav-item">
+        <a href="/reach" class="nav-link">Reach us</a>
+      </li>
+    
+      <li class="nav-item">
+        <a href="/#main" class="nav-link">About Gyansagar</a>
+      </li>
+    </ul>
+    <div class="hamburger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  </nav>
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+    const navLink = document.querySelectorAll(".nav-link");
+
+    hamburger.addEventListener("click", mobileMenu);
+    navLink.forEach((n) => n.addEventListener("click", closeMenu));
+
+    function mobileMenu() {
+      hamburger.classList.toggle("active");
+      navMenu.classList.toggle("active");
+    }
+
+    function closeMenu() {
+      hamburger.classList.remove("active");
+      navMenu.classList.remove("active");
+    }
+  </script>
+</header>
+>>>>>>> bdf8b783ebbb057dfc653ddb7167337a4a2738cb

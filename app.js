@@ -11,9 +11,7 @@ app.use(express.static("public"));
 app.get('/', (req,res)=>{
     res.render("index");
 })
-app.get('/team', (req,res)=>{
-    res.render("team");
-})
+
 
 app.listen(PORT, ()=>{
     console.log(`Listening to the port ${PORT}`);

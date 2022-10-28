@@ -1,14 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Our Team - Abhyuday</title>
     <link rel="stylesheet" href="./css/navbar.css" />
     <link rel="stylesheet" href="./css/index.css" />
-</head>
-<body>
+    <link rel="stylesheet" href="./css/team.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+  </head>
+  <body>
     <%-include('partials/navbar')%>
-</body>
+    <div class="d-p">
+      <h1 class="top-team">MEET OUR TEAM</h1>
+      <div class="dd-p">
+        <h1 class="team-h1" >4th Year Members</h1>
+      </div>
+      <div class="team-parent">
+        <% if (teams.length > 0) { %> <% teams.forEach(team => { %>
+        <div class="team-indi">
+          <img class="indi-img" src="<%= team.img %>" alt="<%= team.name %>" />
+          <h3><%= team.name %></h3>
+          <div class="d-li">
+            <a href="<%= team.linkedin %>" target="_blank" rel="noreferrer"
+              ><i class="fa fa-linkedin-square fa-2x"></i>
+            </a>
+          </div>
+          <h4><%= team.post %></h4>
+        </div>
+        <% }) %> <% } else { %>
+        <p>4th year stacking up...</p>
+        <% } %>
+      </div>
+      <br />
+
+      <div class="dd-p">
+        <h1 class="team-h1" >3rd Year Members</h1>
+      </div>
+      <div class="team-parent">
+        <% if (teams1.length > 0) { %> <% teams1.forEach(team1 => { %>
+        <div class="team-indi">
+          <img class="indi-img" src="<%= team1.img %>" alt="<%= team1.name %>" />
+          <h3><%= team1.name %></h3>
+          <div>
+            <h4><%= team1.post %></h4>
+          </div>
+        </div>
+        <% }) %> <% } else { %>
+        <p>3rd year stacking up...</p>
+        <% } %>
+      </div>
+      <br />
+
+      <div class="dd-p">
+        <h1 class="team-h1" >2nd Year Members</h1>
+      </div>
+      <div class="team-parent">
+        <% if (teams2.length > 0) { %> <% teams2.forEach(team2 => { %>
+        <div class="team-indi">
+          <img class="indi-img" src="<%= team2.img %>" alt="<%= team2.name %>" />
+          <h3><%= team2.name %></h3>
+          <div>
+            <h4><%= team2.post %></h4>
+          </div>
+        </div>
+        <% }) %> <% } else { %>
+        <p>2nd year stacking up...</p>
+        <% } %>
+      </div>
+      <div class="d-bt">
+        <a href="/"><p class="p-by">Wanna go Home?</p></a>
+      </div>
+    </div>
+    <%-include('partials/footer')%>
+  </body>
 </html>

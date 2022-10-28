@@ -19,9 +19,13 @@
   "dependencies": {
     "body-parser": "^1.20.1",
     "ejs": "^3.1.8",
+<<<<<<< HEAD
     "express": "^4.18.2"
   },
   "devDependencies": {
+=======
+    "express": "^4.18.2",
+>>>>>>> bdf8b783ebbb057dfc653ddb7167337a4a2738cb
     "nodemon": "^2.0.20"
   }
 }
