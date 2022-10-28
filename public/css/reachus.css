@@ -1,0 +1,44 @@
+.reach-us{
+    width: 100%;
+    margin: 1rem auto 0 auto;
+   padding-bottom: 2rem;
+   text-align: center;
+    
+}
+
+.reach-us h1{
+    display: inline-block;
+    margin: 1rem auto;
+    font-size: 60px;
+    color: #212529;
+    font-weight: 900;
+    border-bottom: 4px dotted orangered;
+    font-family: 'Allura', cursive;
+    color: transparent;
+    background-image: linear-gradient(to left, #2ecc71, #3498db, #9b59b6, #f39c12);
+    -webkit-background-clip: text;
+    animation: animate 4.5s linear infinite;
+    -webkit-background-size: 500%;
+    background-size: 500%;
+    font-weight: 900;
+}
+
+.gyan-map{
+    margin-top: 2rem;
+    box-shadow: 0 0 0.975rem;
+    border-radius: 0.625rem;
+    width: 60%;
+    height: 400px;
+    object-fit: contain;
+}
+
+@media only screen and (max-width:660px){
+    .reach-us{
+        width: 100%;
+        margin: 1rem auto 0 auto;
+    }
+
+    .gyan-map{
+    width: 85%;
+    }
+}

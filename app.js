@@ -16,6 +16,7 @@ app.use((req, res) => {
     res.redirect('/');
   });
 
+  
 app.listen(PORT, ()=>{
     console.log(`Listening to the port ${PORT}`);
 })
