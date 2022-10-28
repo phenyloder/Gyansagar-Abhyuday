@@ -1,0 +1,39 @@
+<link rel="stylesheet" href="./css/gallery.css" />
+<link rel="stylesheet" href="./css/navbar.css" />
+<link rel="stylesheet" href="./css/footer.css" />
+<link
+  rel="stylesheet"
+  href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+/>
+<link
+href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+rel="stylesheet"
+/>
+
+<!-- Nav-bar  -->
+<%-include('partials/navbar')%>
+
+<div class="gallery">
+  <div class="gallery-main">
+    <h1>Chhath Puja.</h1>
+    <h1>All photos at one Place.</h1>
+  </div>
+</div>
+
+<div class="image-gallery">
+  <div class="gallery-all">
+    <% if (photos.length > 0) { %> <% photos.forEach(photo => { %>
+    <div class="image-all">
+      <img src="<%= photo.img %>" alt="<%= photo.alt %>" />
+    </div>
+    <% }) %> <% } else { %>
+    <p>Photos coming up....</p>
+    <% } %>
+  </div>
+  <div class="d-bt">
+    <a href="/"><p class="p-by">Go Home?</p></a>
+  </div>
+</div>
+
+<!-- Footer  -->
+<%-include('partials/footer')%>

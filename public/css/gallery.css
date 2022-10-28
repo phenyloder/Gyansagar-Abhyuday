@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track{
+    background-image: radial-gradient(#ff8a00, #e52e71)
+  }
+  ::-webkit-scrollbar-thumb{
+    background-image: radial-gradient(#dd3f00, #bb4bca);
+    border-radius: 25px;
+  }
+  ::-webkit-scrollbar-thumb:hover{
+    background-image: radial-gradient(#bb4bca, #dd3f00);
+  }
+
+.gallery{
+    padding-top: 5rem;
+    justify-content: center;
+    align-items: center;
+    background-image: url("chhath2_.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 0;
+    min-height: 100vh;
+    height: auto;
+    background-attachment: fixed;
+    opacity: 1;
+    box-shadow: inset 0 0 0 1000px rgba(231, 246, 194, 0.237);
+}
+
+.gallery-bg{
+    background-image: url("chhath1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 0;
+    min-height: 100vh;
+    height: auto;
+    background-attachment: fixed;
+    opacity: 1;
+    box-shadow: inset 0 0 0 1000px rgba(231, 246, 194, 0.237);
+}
+
+.gallery-main{
+    position: absolute;
+    top: 40%;
+    padding-left: 7rem;
+    font-weight: 900;
+}
+
+.gallery-main h1{
+    font-family: 'Allura', cursive;
+    margin-top: 0rem;
+    font-size: 4.4rem;
+    line-height: 1.6;
+    color: rebeccapurple;
+}
+
+.image-gallery{
+    display: block;
+    flex-wrap: wrap;
+    scroll-behavior: smooth;
+    width: 100%;
+    margin-top: 0rem !important;
+    /* background-color: #bb4bca; */
+}
+
+.gallery-all {
+    position: relative;
+    column-count: 3;
+    margin: 4%;
+    gap: 1%;
+  }
+
+  .image-all {
+    display: inline-block;
+    margin-bottom: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 0.975rem;
+    border-radius: 0.625rem;
+  }
+
+.image-all img {
+    width: 100%;
+    transition: all 0.4s cubic-bezier(0.47, 0, 0.745, 0.715);
+    opacity: 0.89;
+  }
+
+  .image-all img:hover {
+    transform: scale(1.3);
+    opacity: 1;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .gallery-all {
+        column-count: 2;
+    }
+  }
+  
+
+
+  @media only screen and (max-width: 425px) {
+    .gallery-all {
+        column-count: 1;
+    }
+  }
+
+ 
+
+  .d-bt {
+    text-align: center;
+  }
+  
+  .p-by {
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: 'Lato', sans-serif;
+    background-color: rgba(187, 239, 253, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    color: #1a1a1a;
+    transition: all 0.1s ease-in-out;
+    display: inline-block;
+    margin: 0vh auto 3vh auto;
+  }
+  
+  .p-by:hover {
+    border-bottom: 1px solid #1a1a1a;
+    background-color: rgb(187, 239, 253);
+  }

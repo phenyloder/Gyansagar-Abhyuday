@@ -13,7 +13,22 @@ app.get('/', (req,res)=>{
 })
 
 app.get('/gallery', (req,res) => {
-    res.render("gallery");
+
+    const photos = [
+        {img:"./images/Day 1.png", alt:"img"},
+        {img:"./images/Day 1.png", alt:"img"},
+        {img:"./images/Day 1.png", alt:"img"},
+        {img:"./images/Day 1.png", alt:"img"},
+        {img:"./images/Day 1.png", alt:"img"},
+        {img:"./images/Day 1.png", alt:"img"},
+        {img:"./images/Day 1.png", alt:"img"},
+        {img:"./images/Day 1.png", alt:"img"},
+        {img:"./images/Day 1.png", alt:"img"},
+        {img:"./images/Day 1.png", alt:"img"},
+        {img:"./images/Day 1.png", alt:"img"},
+        {img:"./images/Day 1.png", alt:"img"},
+    ];
+    res.render("gallery", {photos});
 })
 
 
