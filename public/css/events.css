@@ -6,6 +6,13 @@
     font-weight: 900;
     border-bottom: 4px dotted orangered;
     font-family: 'Allura', cursive;
+    color: transparent;
+    background-image: linear-gradient(to left, #2ecc71, #3498db, #9b59b6, #f39c12);
+    -webkit-background-clip: text;
+    animation: animate 4.5s linear infinite;
+    -webkit-background-size: 500%;
+    background-size: 500%;
+    font-weight: 900;
 }
 
 .events-main{
@@ -43,6 +50,18 @@
 .events-content h2{
     text-align: center;
     margin: 1rem 0;
+    font-weight: 900;
+    font-family: 'Lato', sans-serif;
+    color: rebeccapurple;
+}
+
+.events-content p{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.6;
+    margin-top: 2vh;
+    color: #303030;
 }
 
 .content-2{
@@ -61,9 +80,11 @@
     }
     .events h1{
         font-size: 2.55rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
     }
     .img-1{
-        width: 70%;
+        width: 87%;
     }
 
     .events-content{
@@ -76,6 +97,6 @@
 
 @media only screen and (max-width:1301px) and (min-width:661px){
     .img-1{
-        box-shadow: none;
+    box-shadow: none;
     }
 }
