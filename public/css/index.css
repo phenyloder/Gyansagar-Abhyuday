@@ -7,4 +7,32 @@ body{
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     background-color: #F1FAEE;
+    -webkit-tap-highlight-color: transparent;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track{
+    background-image: radial-gradient(#ff8a00, #e52e71)
+  }
+  ::-webkit-scrollbar-thumb{
+    background-image: radial-gradient(#dd3f00, #bb4bca);
+    border-radius: 25px;
+  }
+  ::-webkit-scrollbar-thumb:hover{
+    background-image: radial-gradient(#bb4bca, #dd3f00);
+  }
+
+.bg-main{
+    background: url(chhath-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 0;
+    min-height: 100vh;
+    height: auto;
+    background-attachment: fixed;
+    opacity: 1;
+    box-shadow: inset 0 0 0 1000px rgba(231, 246, 194, 0.5);
 }
