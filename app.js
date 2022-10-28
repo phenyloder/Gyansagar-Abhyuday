@@ -12,6 +12,9 @@ app.get('/', (req,res)=>{
     res.render("index");
 })
 
+app.use((req, res) => {
+    res.redirect('/');
+  });
 
 app.listen(PORT, ()=>{
     console.log(`Listening to the port ${PORT}`);
