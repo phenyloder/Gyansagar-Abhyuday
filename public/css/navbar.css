@@ -9,11 +9,10 @@
 
 .brand-h1{
     color: rgba(255, 77, 0, 0.868);
-    font-family: "Poppins", sans-serif;
     font-family: 'Cantarell', sans-serif;
     font-size: 2rem;
     font-weight: 700;
-    margin-left: .5rem;
+    margin-left: 0.3rem;
 }
 
 .nav-logo{
@@ -21,10 +20,6 @@
     display: flex;
     align-items: center;
     width: 15%;
-}
-
-.brand-img{
-    width: 100%;
 }
 
 .left-brand{
@@ -115,8 +110,21 @@ content: '';
     color: rgb(208, 255, 0);
 }
 
+.logo{
+    width: 2.4rem;
+}
+
+
 
 @media only screen and (max-width: 768px) {
+    .brand-h1{
+        font-size: 1.2rem;
+    }
+
+    .logo{
+        width: 2.2rem;
+    }
+
     .nav-logo{
         position: relative;
         display: flex;
@@ -127,7 +135,7 @@ content: '';
     .nav-menu {
         position: fixed;
         left: -100%;
-        top: 4rem;
+        top: 3.6rem;
         flex-direction: column;
         width: 100%;
         border-radius: 10px;

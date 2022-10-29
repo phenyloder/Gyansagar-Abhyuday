@@ -54,11 +54,12 @@
 }
 
 .gallery-main h1{
-    font-family: 'Allura', cursive;
+  font-family: 'Lato', sans-serif;
     margin-top: 0rem;
-    font-size: 4.4rem;
+    font-size: 4.5rem;
     line-height: 1.6;
     color: rebeccapurple;
+    font-variant: small-caps;
 }
 
 .image-gallery{
@@ -108,21 +109,7 @@
     opacity: 1;
   }
 
-@media only screen and (max-width: 768px) {
-    .gallery-all{
-      column-count: 2;
-    }
-  }
-  
 
-
-  @media only screen and (max-width: 425px) {
-    .gallery-all {
-        column-count: 1;
-    }
-  }
-
- 
 
   .d-bt {
     text-align: center;
@@ -144,3 +131,44 @@
     border-bottom: 1px solid #1a1a1a;
     background-color: rgb(187, 239, 253);
   }
+
+@media only screen and (max-width: 768px) {
+    .gallery-all{
+      column-count: 2;
+    }
+  }
+  
+@media only screen and (max-width:1200px) and (min-width:661px){
+  .gallery-main{
+    padding-left: 3rem;
+  }
+}
+
+  @media only screen and (max-width:660px){
+    .gallery-main{
+       padding-left: 2rem;
+       top: 30%;
+    }
+
+    .gallery-main h1{
+        font-size: 2.5rem;
+        letter-spacing: normal;
+    }
+}
+
+
+  @media only screen and (max-width: 425px) {
+    .gallery-all {
+        column-count: 1;
+    }
+  }
+
+
+  @media only screen and (max-width:320px){
+    .gallery-main{
+        padding-left: 1.5rem;
+    }
+    .gallery-main h1{
+        font-size: 1.9rem;
+    }
+}

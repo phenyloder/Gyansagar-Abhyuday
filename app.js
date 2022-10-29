@@ -15,18 +15,18 @@ app.get('/', (req,res)=>{
 app.get('/gallery', (req,res) => {
 
     const photos = [
-        {img:"./images/Day 1.png", alt:"img"},
-        {img:"./images/Day 1.png", alt:"img"},
-        {img:"./images/Day 1.png", alt:"img"},
-        {img:"./images/Day 1.png", alt:"img"},
-        {img:"./images/Day 1.png", alt:"img"},
-        {img:"./images/Day 1.png", alt:"img"},
-        {img:"./images/Day 1.png", alt:"img"},
-        {img:"./images/Day 1.png", alt:"img"},
-        {img:"./images/Day 1.png", alt:"img"},
-        {img:"./images/Day 1.png", alt:"img"},
-        {img:"./images/Day 1.png", alt:"img"},
-        {img:"./images/Day 1.png", alt:"img"},
+        {img:"./images/Day 1-min.png", alt:"img"},
+        {img:"./images/Day 1-min.png", alt:"img"},
+        {img:"./images/Day 1-min.png", alt:"img"},
+        {img:"./images/Day 1-min.png", alt:"img"},
+        {img:"./images/Day 1-min.png", alt:"img"},
+        {img:"./images/Day 1-min.png", alt:"img"},
+        {img:"./images/Day 1-min.png", alt:"img"},
+        {img:"./images/Day 1-min.png", alt:"img"},
+        {img:"./images/Day 1-min.png", alt:"img"},
+        {img:"./images/Day 1-min.png", alt:"img"},
+        {img:"./images/Day 1-min.png", alt:"img"},
+        {img:"./images/Day 1-min.png", alt:"img"},
     ];
     res.render("gallery", {photos});
 })
